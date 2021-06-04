@@ -1,0 +1,54 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Sajib\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add express dotenv ejs mongoose multer cokie-parser express-validator jsonwebtoken bcrypt http-errors
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\php-8.0.3;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\Users\Sajib\AppData\Local\Microsoft\WindowsApps;C:\Users\Sajib\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sajib\AppData\Roaming\Composer\vendor\bin;C:\Users\Sajib\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.17.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/cokie-parser: Not found
+      at Request.params.callback [as _callback] (C:\Users\Sajib\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66988:18)
+      at Request.self.callback (C:\Users\Sajib\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140662:22)
+      at Request.emit (events.js:376:20)
+      at Request.<anonymous> (C:\Users\Sajib\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141634:10)
+      at Request.emit (events.js:376:20)
+      at IncomingMessage.<anonymous> (C:\Users\Sajib\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141556:12)
+      at Object.onceWrapper (events.js:482:28)
+      at IncomingMessage.emit (events.js:388:22)
+      at endReadableNT (internal/streams/readable.js:1336:12)
+      at processTicksAndRejections (internal/process/task_queues.js:82:21)
+
+npm manifest: 
+  {
+    "name": "node_chate_application",
+    "version": "1.0.0",
+    "description": "full node chate application",
+    "main": "app.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/a1barif2h/node_chate_application.git"
+    },
+    "author": "Mohammad Arif Hossain",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/a1barif2h/node_chate_application/issues"
+    },
+    "homepage": "https://github.com/a1barif2h/node_chate_application#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
