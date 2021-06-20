@@ -1,8 +1,15 @@
+//external import
 const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const path = require("path");
 const cookieParser = require("cookie-parser");
+
+//internal import
+const { notFoundHandler, errorHandler } = require("./middlewares/commen/error");
+const loginRouter = require('./router/loginRouter');
+const usersRouter = require('./router/usersRouter');
+const inboxRouter = require('./router/inboxRouter')
 
 const app = express();
 dotenv.config();
@@ -29,8 +36,15 @@ app.use(express.static(path.join(__dirname,"public")));
 app.use(cookieParser(process.env.COOKIE_SECURITY))
 
 //routing setup
+app.use('/', loginRouter)
+app.use('/users', usersRouter)
+app.use('/inbox', inboxRouter)
 
-//error handling
+//404 error handler
+app.use(notFoundHandler)
+
+// common error handler
+app.use(errorHandler)
 
 app.listen(process.env.PORT, () => {
     console.log(`app listening to port ${process.env.PORT}`)
